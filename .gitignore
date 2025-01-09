@@ -1,0 +1,10 @@
+# Unity specific
+Temp/
+UserSettings/
+Library/
+.vscdoe/
+# Ignore other common Unity auto-generated files
+Logs/
+*.csproj
+*.sln
+*.userprefs

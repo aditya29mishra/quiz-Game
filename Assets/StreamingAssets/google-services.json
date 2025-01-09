@@ -1,0 +1,30 @@
+{
+    "project_info": {
+      "project_number": "585472712028",
+      "firebase_url": "https://chamberly-a2a0c-default-rtdb.firebaseio.com",
+      "project_id": "chamberly-a2a0c",
+      "storage_bucket": "chamberly-a2a0c.firebasestorage.app"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:585472712028:android:f91c311fcc21e7a2f6f599",
+          "android_client_info": {
+            "package_name": "com.DefaultCompany.Chamberly"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCGeCKhYWfAzQHzllubl6kgtID5TvSgYqc"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
