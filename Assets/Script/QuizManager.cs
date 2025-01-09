@@ -168,10 +168,23 @@ public class QuizManager : MonoBehaviour
 }
 
     void EndQuiz()
+{
+    canvasGameplay.SetActive(false);
+    UpdateGameState("in_game");
+    Achievement(currentQuizKey, currentQuizScore);
+}
+
+void Achievement(string quizKey, int score)
+{
+    var achievementData = new Dictionary<string, object>
     {
-        canvasGameplay.SetActive(false);
-        UpdateGameState("in_game");
-    }
+        { "quizKey", quizKey },
+        { "score", score },
+        { "timestamp", DateTime.UtcNow.ToString("o") } // ISO 8601 format
+    };
+    firestore.Collection("achievements").Document(playerId).Collection("completedQuizzes").AddAsync(achievementData);
+}
+
 
     void UpdateScore(string quizKey, int increment)
     {
